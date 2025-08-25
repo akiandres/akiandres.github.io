@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+     font-family: "Roboto", sans-serif;
+    background-color: burlywood;
+    font-weight: 100;
+}
+p{
+     font-family: "Roboto", sans-serif;
+    background-color: burlywood;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings: "wdth" 700;
+}
+div{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    margin-bottom: 10px;
+    border: 3px solid blue;
+    border-radius: 10%;
+
+}
+#variable
+{
+
+    background-color: black;
+
+}
+#tercero{
+   border-radius: 50%;
+}
