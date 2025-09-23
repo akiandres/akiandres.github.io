@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tarjetas básicas</title>
+
+<style>
+  .wrap{
+    max-width:720px;
+    margin-inline:auto;
+  }
+ .cards{
+  display:flex;
+  flex-direction: column;
+  gap:1rem;
+ }
+ .card{
+  padding: 1rem;
+  border: 0.5rem solid black;
+  margin: 0;
+ }
+ p{
+  font-size: clamp(0.5rem,1.5vw,1rem)
+ }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Tarjetas básicas</h1>
+    <p class="lead">Tres tarjetas en columna con max-width, padding, border y gap.</p>
+
+    <section class="cards" aria-label="Lista de tarjetas">
+      <article class="card">
+        <h2>HTML semántico</h2>
+        <p>Usa etiquetas claras (header, main, section, footer) para estructurar.</p>
+      </article>
+
+      <article class="card">
+        <h2>CSS: Box model</h2>
+        <p>Controla padding, border y margin para un layout limpio.</p>
+      </article>
+
+      <article class="card">
+        <h2>Responsive</h2>
+        <p>Limita el ancho con max-width y ajusta tipografías con clamp().</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
