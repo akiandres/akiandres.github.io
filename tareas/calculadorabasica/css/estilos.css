@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+#calculadora{
+    background-color: white;
+    margin:1em;
+    border:10px solid gray;
+    
+}
+#calculadorahijo{
+display: flex;
+    width:100%;
+     height: 100%;
+    place-items: center;
+}
+.calculadoranieto1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.calculadoranieto2{
+    margin-top: 1.25em;
+}
+.botones{
+    width:50%;
+     place-items: center;
+    display:grid;
+}
+.boton{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

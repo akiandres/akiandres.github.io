@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora basica</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- Esta parte es de la estructura del primer numero, la operacion y el segundo numero -->
+    <div id="calculadora">
+         <form>
+        <div id="calculadorahijo">
+            
+                <div class="calculadoranieto1">
+                    <label for="fnumber">Primer numero</label>
+                    <input type="number" id="fnumber" name="fnumber">
+                </div>
+                <div class="calculadoranieto2">
+                    <label id="operacion">&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </div>
+                <div class="calculadoranieto1">
+                    <label for="snumber">Segundo numero</label>
+                    <input type="number" id="snumber" name="snumber">
+                </div>
+
+       
+        <!-- Esta parte es de la estructura de las operaciones -->
+            <div class="botones"><div>
+                <button class="boton" id="opsuma">+</button>
+            </div>
+            <div>
+                <button class="boton" id="opresta">-</button>
+            </div>
+            <div>
+                <button class="boton" id="opmultiplicacion">*</button>
+            </div>
+            <div>
+                <button class="boton" id="opdivision">/</button>
+            </div>
+            <div>
+                <button class="boton" id="opresto">%</button>
+            </div>
+            <div>
+                <button class="boton" id="oppotencia">^</button>
+            </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div id="calculadora">
+        <h1>El resultado es: <label id="resultado">null</label></h1>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
