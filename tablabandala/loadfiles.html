@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Archivo JSON</title>
+    <style>
+        body {font-family: system-ui, sans-serif; margin: 2rem;}
+        #out { white-space: pre-wrap; border: 1px solid #ccc;
+            padding: 1rem; border-radius: .5rem;}
+            table {
+      border: 0.1rem solid black;
+      border-collapse: collapse;
+      
+    }
+    th {
+      border: 0.1rem solid black;
+    }
+
+    </style>
+ 
+</head>
+<body>
+    <h1>Cargar archivo JSON</h1>
+    <input id="file" type="file" accept=".json">
+    <button id="show" type="button">Mostrar</button>
+    <h2>Contenido:</h2>
+    <pre id="out">- no hay contenido -</pre>
+    <script>
+        const input = document.getElementById('file');
+        const out = document.getElementById('out');
+
+        document.getElementById('show').addEventListener('click', async ()=>
+    {
+        const f= input.files?.[0];
+        if (!f) {
+             out.textContent ='Elige un archivo en el formato json'; 
+        return; }
+    const text=await f.text();
+  
+     out.innerHTML = text;
+ 
+
+    
+   })
+
+   //tenemos que hacer una tabla con el archivo json, y tiene que funcionar con n elementos y con n atributos, osea que 
+   //aunque tenga 10 elementos el json debe hacerlos todos en tabla, y debe funcionar aunque no tenga todos los atributos
+    </script>
+</body>
+</html>
